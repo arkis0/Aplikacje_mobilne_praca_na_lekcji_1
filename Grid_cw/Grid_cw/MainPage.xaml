@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grid_cw.MainPage">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="300" />
+            <RowDefinition Height="150" />
+            <RowDefinition Height="150" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- rząd 1 -->
+        <BoxView Grid.Row="0" Grid.Column="0" Color="Red" Margin="10"/>
+        <Label Grid.Row="0" Grid.Column="0" Text="Programowanie aplikacji" Margin="10" TextColor="Black"/>
+
+        <BoxView Grid.Row="0" Grid.Column="1" Color="Blue" Margin="10"/>
+        <Label Grid.Row="0" Grid.Column="1" Text="Programowanie aplikacji" Margin="10" TextColor="Black"/>
+
+        <!-- rząd 2 -->
+        <BoxView Grid.Row="1" Grid.Column="0" Color="Green" Margin="10"/>
+        <Label Grid.Row="1" Grid.Column="0" Text="Programowanie aplikacji mobilnych 0" Margin="10" TextColor="Black"/>
+
+        <BoxView Grid.Row="1" Grid.Column="1" Color="Yellow" Margin="10"/>
+        <Label Grid.Row="1" Grid.Column="1" Text="Programowanie aplikacji mobilnych 1" Margin="10" TextColor="Black"/>
+
+        <!-- rząd 3 -->
+        <BoxView Grid.Row="2" Grid.ColumnSpan="2" Color="Purple" Margin="10"/>
+        <Label Grid.Row="2" Grid.ColumnSpan="2" Text="Programowanie aplikacji mobilnych 2" Margin="10" TextColor="Black"/>
+
+        <!-- rząd 4 -->
+        <BoxView Grid.Row="3" Grid.Column="0" Color="Orange" Margin="10"/>
+        <Label Grid.Row="3" Grid.Column="0" Text="Programowanie aplikacji mobilnych 3" Margin="10" TextColor="Black"/>
+
+        <BoxView Grid.Row="3" Grid.Column="1" Color="Pink" Margin="10"/>
+        <Label Grid.Row="3" Grid.Column="1" Text="Programowanie aplikacji mobilnych 4" Margin="10" TextColor="Black"/>
+    </Grid>
+
+</ContentPage>
